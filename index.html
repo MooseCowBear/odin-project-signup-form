@@ -4,13 +4,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto+Flex:wght@400;600&display=swap" rel="stylesheet">
   <title>Signup</title>
 </head>
 <body>
   <main>
     <div class="left half">
-      <img src="./images/casey-horner-G2jAOMGGlPE-unsplash.jpg" alt="night sky over mountains">
-      <p>Photo by <a href="https://unsplash.com/@mischievous_penguins?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Casey Horner</a> on <a href="https://unsplash.com/images/nature/mountain?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      <picture>
+        <source media="(max-width:620px)" srcset="./images/casey-horner-O0R5XZfKUGQ-unsplash.jpg">
+        <img src="./images/casey-horner-G2jAOMGGlPE-unsplash.jpg" alt="night sky over mountains">
+      </picture>
+      <p class="attr">Photo by <a href="https://unsplash.com/@mischievous_penguins?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Casey Horner</a> on <a href="https://unsplash.com/images/nature/mountain?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       </p>
     </div>
 
@@ -19,35 +26,37 @@
         <h1>go farther <span>with less</span></h1>
         <p>simple solutions for your <span>most stubborn</span> problems</p>
       </div>
-      <form>
-        <div class="input__wrapper">
-          <label for="name">name:</label>
-          <input id="name" type="text">
-        </div>
-
-        <div class="input__wrapper">
-          <label for="email">email:</label>
-          <input id="email" type="email">
-        </div>
-
-        <div class="input__wrapper">
-          <label for="phone-number">phone number:</label>
-          <input id="phone-number" type="tel">
-        </div>
-
-        <div class="input__wrapper">
-          <label for="password">password</label>
-          <input id="password" type="password">
-        </div>
-
-        <div class="input__wrapper">
-          <label for="confirm-password">confirm password</label>
-          <input id="confirm-password" type="password">
-        </div>
-
-        <button type="submit">create account</button>
-      </form>
-      <p>have an account? <a href="#">log in</a></p>
+      <div class="form__wrapper">
+        <form>
+          <div class="input__wrapper">
+            <label for="name">name:</label>
+            <input id="name" type="text">
+            <p class="warning">enter a name</p>
+          </div>
+          <div class="input__wrapper">
+            <label for="email">email:</label>
+            <input id="email" type="email">
+            <p class="warning">enter a valid email</p>
+          </div>
+          <div class="input__wrapper">
+            <label for="phone-number">phone number:</label>
+            <input id="phone-number" type="tel">
+            <p class="warning">enter a phone number</p>
+          </div>
+          <div class="input__wrapper">
+            <label for="password">password</label>
+            <input id="password" type="password">
+            <p class="warning">enter a password</p>
+          </div>
+          <div class="input__wrapper">
+            <label for="confirm-password">confirm password</label>
+            <input id="confirm-password" type="password">
+            <p class="warning">password must match</p>
+          </div>
+          <button type="submit">create account</button>
+        </form>
+        <p>have an account? <a href="#">log in</a></p>
+      </div>
     </div>
   </main>
 </body>
