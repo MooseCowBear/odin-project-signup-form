@@ -160,8 +160,13 @@ button:hover, button:focus {
 }
 
 .warning {
+  visibility: hidden;
   color: salmon;
   font-size: 0.6rem;
+}
+
+.warning.show {
+  visibility: visible;
 }
 
 @media only screen and (max-width: 620px) {
