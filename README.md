@@ -11,4 +11,4 @@ Warnings for invalid or empty fields appear when user leaves the input field.
 
 ## Live
 
-![Live](https://moosecowbear.github.io/odin-project-signup-form/)
+- [Live](https://moosecowbear.github.io/odin-project-signup-form/)
