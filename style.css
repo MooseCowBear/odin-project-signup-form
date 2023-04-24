@@ -1,6 +1,6 @@
 :root {
-  --dark-200: rgb(0, 35, 46);
-  --dark-100: rgb(1, 101, 124);
+  --dark-200: rgb(21, 44, 50);
+  --dark-100: rgba(1, 101, 124, 0.8);
   --accent: rgb(255, 173, 97);
 }
 
@@ -66,4 +66,116 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /*background-color: rgb(50, 55, 56);*/
+  background-color: rgb(231, 231, 231);
+  background: linear-gradient(var(--dark-100) 60%, var(--dark-200));
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+main {
+  height: 34rem;
+  max-width: 50rem;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: 34rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.left {
+  position: relative;
+}
+
+.attr {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.98);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.6rem;
+}
+
+.attr a {
+  color: rgba(255, 255, 255, 0.98);
+}
+
+.right {
+  background-color: rgba(255, 255, 255, 0.98); 
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  color: var(--dark-200); /*rgb(231, 231, 231);*/
+}
+
+.right a {
+  color: var(--accent);
+}
+
+.right__header {
+  line-height: 1.2;
+}
+
+.input__wrapper {
+  padding: 0.1rem 0rem;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 0.9rem;
+}
+
+input {
+  appearance: none;
+  border: 2px solid var(--dark-200);
+  border-radius: 5px;
+  outline: none;
+  padding: 0.2rem;
+}
+
+button {
+  background-color: var(--accent);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 0.3rem 1rem;
+  margin: 0.5rem 0;
+}
+
+button:hover, button:focus {
+  background-color: transparent;
+  border: 2px solid var(--accent);
+  cursor: pointer;
+}
+
+.warning {
+  color: salmon;
+  font-size: 0.6rem;
+}
+
+@media only screen and (max-width: 620px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-row: auto;
+    height: auto;
+    border-radius: 0;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .right {
+    height: auto;
+  }
 }
