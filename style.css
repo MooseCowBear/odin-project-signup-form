@@ -96,6 +96,16 @@ img {
   position: relative;
 }
 
+.logo {
+  position: absolute;
+  color: var(--light);
+  font-family: 'Libre Baskerville';
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+}
+
 .attr {
   position: absolute;
   bottom: 0;
@@ -106,6 +116,10 @@ img {
 
 .attr, .attr a {
   color: var(--light);
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 .right {
@@ -169,7 +183,7 @@ button:hover, button:focus {
   visibility: visible;
 }
 
-.input.warning {
+input.warning { /* not working in the js */
   border: 2px solid var(--warning);
 }
 
