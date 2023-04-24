@@ -193,6 +193,7 @@ input.warning { /* not working in the js */
     grid-row: auto;
     height: auto;
     border-radius: 0;
+    background-color: var(--light);
   }
   img {
     width: 100%;
@@ -200,5 +201,12 @@ input.warning { /* not working in the js */
   }
   .right {
     height: auto;
+  }
+  .right__header {
+    margin: 1rem 0;
+  }
+  .left {
+    border-radius: 0 0 15px 15px;
+    overflow: hidden;
   }
 }
