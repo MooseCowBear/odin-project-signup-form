@@ -41,9 +41,11 @@ theForm.addEventListener("submit", function(event) {
 function updateWarning(elem, valid) {
   if (valid) {
     elem.nextElementSibling.classList.remove("show");
+    elem.classList.remove("error");
   }
   else {
     elem.nextElementSibling.classList.add("show");
+    elem.classList.add("error");
   }
 }
 
