@@ -159,6 +159,11 @@ input {
   padding: 0.2rem;
 }
 
+input:hover, input:focus {
+  cursor: pointer;
+  border: 2px solid var(--dark-100);
+}
+
 button {
   background-color: var(--accent);
   border: 2px solid transparent;
@@ -183,7 +188,7 @@ button:hover, button:focus {
   visibility: visible;
 }
 
-input.warning { /* not working in the js */
+input.error { /* not working in the js */
   border: 2px solid var(--warning);
 }
 
