@@ -58,7 +58,7 @@ function acceptEmail(input) {
 }
 
 function acceptPhoneNumber(input) {
-  return notEmpty(input) && isNum(input);
+  return (notEmpty(input) && isNum(input)) || !notEmpty(input);
 }
 
 function acceptPassword(input, other) {
@@ -71,7 +71,7 @@ function notEmpty(input) {
 }
 
 function isNum(input) {
-  const reg = /^\d+$/;
+  const reg = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
   return reg.test(input);
 }
 
